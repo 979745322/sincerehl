@@ -1,10 +1,40 @@
 /* header */
+.header {
+    height: 137px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ebebeb;
+}
+.margin-auto{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*iphone: w < 768px*/
+@media screen and (max-width: 768px){
+    .margin-auto{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+/*pad: w >= 768  && w< 992*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .margin-auto{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+/*中等屏幕   w >= 992  && w<1200*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .margin-auto{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
 .contact {
     float: right;
-    margin-right: 30px;
 }
 
 .contact a {
+    font-size: 14px;
     font-weight: 500;
     color: green;
     margin-right: 10px;
@@ -21,7 +51,70 @@
 }
 
 .contact .green-top-btn {
-    padding: 10px 20px;
+    padding: 13px 20px;
     color: #FFFFFF;
     background: #3A7443;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.contact .green-top-btn:hover {
+    background: #1c4623;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a img {
+    border: 0;
+    vertical-align: middle;
+    width: 240px !important;
+    height: 96px !important;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.search-div{
+    float: right;
+}
+.search-input {
+    margin-top: 11px;
+    margin-right: 5px;
+}
+
+.search-btn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #3a7443;
+}
+
+.top-nav {
+    float: right;
+    margin-top: 5px;
+}
+
+.top-nav ul {
+    list-style: none;
+    line-height: 40px;
+    margin-left: 50px;
+}
+
+.top-nav li {
+    float: left;
+}
+
+.top-nav a {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.top-nav a:hover {
+    color: #66936d;
 }
