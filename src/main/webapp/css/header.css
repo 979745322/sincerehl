@@ -1,0 +1,27 @@
+/* header */
+.contact {
+    float: right;
+    margin-right: 30px;
+}
+
+.contact a {
+    font-weight: 500;
+    color: green;
+    margin-right: 10px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.contact a:hover {
+    color: black;
+}
+
+.contact a i {
+    font-style: normal;
+}
+
+.contact .green-top-btn {
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background: #3A7443;
+}
