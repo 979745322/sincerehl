@@ -4,31 +4,12 @@
     background-color: #f9f9f9;
     border-bottom: 1px solid #ebebeb;
 }
-.margin-auto{
-    margin-left: 20%;
-    margin-right: 20%;
+
+.header-div{
+    margin: 0 auto;
+    width: 1170px;
 }
-/*iphone: w < 768px*/
-@media screen and (max-width: 768px){
-    .margin-auto{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-/*pad: w >= 768  && w< 992*/
-@media screen and (max-width: 992px) and (min-width: 768px) {
-    .margin-auto{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
-/*中等屏幕   w >= 992  && w<1200*/
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-    .margin-auto{
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-}
+
 .contact {
     float: right;
 }
@@ -78,9 +59,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.search-div{
+
+.search-div {
     float: right;
+    clear: right;
 }
+
 .search-input {
     margin-top: 11px;
     margin-right: 5px;
@@ -115,6 +99,35 @@
     text-decoration: none;
     padding: 0 20px;
 }
+
+.top-nav .active-label {
+    color: #66936d;
+}
+
 .top-nav a:hover {
     color: #66936d;
 }
+
+/*iphone: w < 768px*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*pad: w >= 768  && w< 992*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .header-div{
+        margin: 0 auto;
+        width: 724px;
+    }
+}
+
+/*中等屏幕   w >= 992  && w<1200*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .header-div{
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+
+
+
