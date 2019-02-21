@@ -1,11 +1,10 @@
 /* header */
 .header {
-    height: 137px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ebebeb;
 }
 
-.header-div{
+.header-div {
     margin: 0 auto;
     width: 1170px;
 }
@@ -47,7 +46,9 @@
 }
 
 .logo {
+    position: relative;
     float: left;
+    height: 136px;
 }
 
 .logo a img {
@@ -60,19 +61,23 @@
     margin-bottom: 20px;
 }
 
+.visible-phone {
+    display: none;
+}
+
 .search-div {
     float: right;
     clear: right;
+    margin-top: 10px;
 }
 
 .search-input {
-    margin-top: 11px;
+    margin-top: 1px;
     margin-right: 5px;
 }
 
 .search-btn {
     float: right;
-    margin-top: 10px;
     margin-right: 10px;
     color: white;
     background-color: #3a7443;
@@ -80,13 +85,13 @@
 
 .top-nav {
     float: right;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .top-nav ul {
     list-style: none;
     line-height: 40px;
-    margin-left: 50px;
 }
 
 .top-nav li {
@@ -94,7 +99,7 @@
 }
 
 .top-nav a {
-    font-weight: 500;
+    font-weight: 600;
     color: black;
     text-decoration: none;
     padding: 0 20px;
@@ -109,23 +114,101 @@
 }
 
 /*iphone: w < 768px*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .header-div {
+        margin: 0 auto;
+        width: 100%;
+    }
 
+    .top-nav {
+        margin: 0 auto 20px auto ;
+        float: none;
+        overflow: hidden;
+        max-width: 440px;
+        width: 80%;
+        display: none;
+    }
+    .top-nav a{
+        margin-left: -40px;
+        display: block;
+        width: 440px;
+    }
+
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-btn {
+        float: none;
+    }
+
+    .search-input {
+        margin-top: 1px;
+    }
+
+    .logo {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 90px;
+    }
+
+    .visible-phone {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        margin-top: -18px;
+        float: right;
+    }
+
+    .visible-phone a i {
+        padding: 11px 13px;
+        border: 1px solid #3a7443;
+        border-radius: 10%;
+        color: #3a7443;
+    }
 }
 
 /*pad: w >= 768  && w< 992*/
-@media screen and (max-width: 992px) and (min-width: 768px) {
-    .header-div{
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .header-div {
         margin: 0 auto;
         width: 724px;
     }
+
+    .top-nav a {
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+
+    .top-nav {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
 }
 
 /*中等屏幕   w >= 992  && w<1200*/
 @media screen and (max-width: 1200px) and (min-width: 992px) {
-    .header-div{
+    .header-div {
         margin: 0 auto;
         width: 960px;
+    }
+
+    .top-nav a {
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        padding: 0 15px;
     }
 }
 

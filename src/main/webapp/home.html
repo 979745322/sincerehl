@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/header.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
 </head>
 <body>
@@ -23,24 +23,27 @@
                 <a href="#">
                     <img src="img/sincere-logo-300.png">
                 </a>
+                <div id="header-navigation-toggle" class="visible-phone">
+                    <a href="#"><i class="fa fa-navicon"></i></a>
+                </div>
             </div>
             <div class="search-div">
                 <input class="search-input" type="text" placeholder="   Search Products...   ">
                 <button class="btn btn-sm search-btn">Search</button>
             </div>
-            <div class="top-nav">
+            <nav class="top-nav">
                 <ul>
                     <li>
                         <a href="#" class="active-label">Home</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#">About&nbsp;Us</a>
                     </li>
                     <li>
                         <a href="#">Catalogues</a>
                     </li>
                     <li>
-                        <a href="#">Find Products</a>
+                        <a href="#">Find&nbsp;Products</a>
                     </li>
                     <li>
                         <a href="#">News</a>
@@ -49,17 +52,19 @@
                         <a href="#">Careers</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#">Contact&nbsp;Us</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
+        <div style="clear: both"></div>
     </div>
 </header>
 
 <!-- JavaScript -->
-<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
 </body>
 </html>
